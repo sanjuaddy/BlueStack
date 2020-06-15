@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Date Attribute</title> 
+    </head> 
+    <body> 
+        Date Advance: 
+        <input type="date" id="doi"> 
+        <button onclick="dateDisplay()">Submit</button> 
+        <p id="demo"></p> 
+        <script>
+            function dateDisplay() {
+                var x = document.getElementById("doi").value;
+                var d = new Date(x); 
+                d.setDate(d.getDate() + 1);
+                document.getElementById("demo").innerHTML = d; 
+            } 
+        </script> 
+    </body> 
+</html>
